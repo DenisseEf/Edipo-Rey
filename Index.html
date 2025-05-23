@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tragedia y Verdad en Tebas - Bootstrap Mejorado</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Fondo con degradado suave y textura */
+        body {
+            background: linear-gradient(135deg, #f5f0e6, #d7c4a3);
+            min-height: 100vh;
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Contenedor principal con sombra y borde redondeado */
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(101, 67, 33, 0.3);
+            padding: 40px 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        /* Encabezado estilizado */
+        header h1 {
+            color: #5D4037;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px #d2b48c;
+        }
+        header p {
+            font-style: italic;
+            color: #8B6D5C;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Navbar personalizado */
+        nav.navbar {
+            background: #5D4037;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+        }
+        nav.navbar .nav-link {
+            color: #FFECB3;
+            font-weight: 600;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        nav.navbar .nav-link:hover {
+            background-color: #d2b48c;
+            color: #5D4037;
+            border-radius: 5px;
+            text-shadow: 0 0 5px #fff8e1;
+        }
+
+        /* Lista con fondo y bordes suaves */
+        ul.list-group li.list-group-item {
+            background-color: #FFF8E1;
+            border: 1px solid #d2b48c;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        ul.list-group li.list-group-item:hover {
+            background-color: #d2b48c;
+            color: #fff;
+            cursor: pointer;
+        }
+        ul.list-group li.list-group-item a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        ul.list-group li.list-group-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sección análisis con sombra y bordes */
+        #analisis {
+            background: #FFECB3;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+            padding: 25px;
+        }
+        #analisis p {
+            text-align: justify;
+            line-height: 1.6;
+            color: #5D4037;
+        }
+        #analisis img {
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(101, 67, 33, 0.4);
+            margin-top: 15px;
+        }
+
+        /* Sección autor centrada y elegante */
+        #autor {
+            margin-top: 50px;
+            color: #5D4037;
+            font-weight: 600;
+        }
+
+        /* Footer con fondo suave y texto pequeño */
+        footer {
+            background: #5D4037;
+            color: #FFECB3;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            box-shadow: 0 -3px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Edipo Rey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#temas">Temas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#analisis">Análisis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#autor">Autor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://es.wikipedia.org/wiki/Edipo_rey" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <header id="inicio" class="text-center">
+            <h1>Tragedia y Verdad en Tebas</h1>
+            <p>Análisis de la obra clásica de Sófocles</p>
+        </header>
+
+        <section id="temas" class="mb-5">
+            <h2 class="mb-3">Temas principales</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#destino">El laberinto del destino</a></li>
+                <li class="list-group-item"><a href="#ironia">Ironía trágica</a></li>
+                <li class="list-group-item"><a href="#ceguera">Ceguera física y moral</a></li>
+                <li class="list-group-item"><a href="https://es.wikipedia.org/wiki/Edipo_rey" target="_blank">Contexto histórico (fuente externa)</a></li>
+            </ul>
+        </section>
+
+        <section id="analisis" class="row">
+            <div class="col-md-8">
+                <h2>Análisis Literario</h2>
+                <p>
+                    La obra explora el conflicto entre el destino y la voluntad humana, con Edipo enfrentando verdades dolorosas que marcan su destino trágico.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="edipo.jpg" alt="Edipo Rey" class="img-fluid rounded shadow" />
+            </div>
+        </section>
+
+        <section id="autor" class="text-center mt-5">
+            <h2>Sobre el autor</h2>
+            <p>Nombre: <strong>Denisse Efrias</strong></p>
+            <p>Apasionada por la literatura clásica y la cultura griega.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <small>Framework Bootstrap aplicado mediante componentes predefinidos y clases CSS.</small>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
